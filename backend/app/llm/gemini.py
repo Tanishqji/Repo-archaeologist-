@@ -12,7 +12,7 @@ class GeminiProvider(LLMProvider):
     def __init__(self, api_key: Optional[str] = None, model_name: Optional[str] = None):
         self.settings = get_settings()
         self.api_key = api_key or self.settings.gemini_api_key
-        self.model_name = model_name or self.settings.llm_model or "gemini-1.5-flash"
+        self.model_name = model_name or self.settings.llm_model or "gemini-3.8-flash"
         self._client = None
         if self.api_key:
             try:

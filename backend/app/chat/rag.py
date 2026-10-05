@@ -81,7 +81,7 @@ class RepoChatService:
             try:
                 import google.generativeai as genai
                 genai.configure(api_key=self.settings.gemini_api_key)
-                model = genai.GenerativeModel(self.settings.llm_model or "gemini-1.5-flash")
+                model = genai.GenerativeModel(self.settings.llm_model or "gemini-3.8-flash")
                 prompt = f"""{CHAT_SYSTEM_PROMPT}
 
 REPOSITORY CONTEXT:

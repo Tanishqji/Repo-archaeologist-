@@ -14,6 +14,7 @@ class VectorStore:
         self._fallback_store: Dict[str, List[CodeChunk]] = {}
 
         try:
+            # pyrefly: ignore [missing-import]
             import chromadb
             os.makedirs(self.settings.chroma_dir, exist_ok=True)
             self.chroma_client = chromadb.PersistentClient(path=self.settings.chroma_dir)
