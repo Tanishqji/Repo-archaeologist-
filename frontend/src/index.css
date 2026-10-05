@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark mode default */
+  --bg: #0B0F17;
+  --surface: #121826;
+  --surface-2: #1A2234;
+  --border: #263046;
+  --text: #E6EAF2;
+  --text-muted: #93A0B8;
+  --primary: #6C8CFF;
+  --primary-hover: #8AA3FF;
+  --accent: #2DD4BF;
+  --success: #34D399;
+  --warning: #FBBF24;
+  --danger: #F87171;
+}
+
+[data-theme="light"] {
+  --bg: #F7F8FB;
+  --surface: #FFFFFF;
+  --surface-2: #EEF1F7;
+  --border: #D9DFEB;
+  --text: #0F172A;
+  --text-muted: #5B6780;
+  --primary: #3B5BDB;
+  --primary-hover: #2F4AC0;
+  --accent: #0D9488;
+  --success: #059669;
+  --warning: #B45309;
+  --danger: #DC2626;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--surface-2);
+}

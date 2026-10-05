@@ -1,0 +1,244 @@
+# Signatures catalog for deterministic tech stack detection
+signatures:
+  # Backend frameworks
+  express:
+    category: backend
+    name: Express.js
+  fastify:
+    category: backend
+    name: Fastify
+  "@nestjs/core":
+    category: backend
+    name: NestJS
+  koa:
+    category: backend
+    name: Koa
+  fastapi:
+    category: backend
+    name: FastAPI
+  flask:
+    category: backend
+    name: Flask
+  django:
+    category: backend
+    name: Django
+  spring-boot:
+    category: backend
+    name: Spring Boot
+  spring-boot-starter-web:
+    category: backend
+    name: Spring Boot Web
+  gin-gonic/gin:
+    category: backend
+    name: Gin
+  labstack/echo:
+    category: backend
+    name: Echo
+  gofiber/fiber:
+    category: backend
+    name: Fiber
+  actix-web:
+    category: backend
+    name: Actix Web
+  axum:
+    category: backend
+    name: Axum
+  rocket:
+    category: backend
+    name: Rocket
+  rails:
+    category: backend
+    name: Ruby on Rails
+  laravel/framework:
+    category: backend
+    name: Laravel
+  Microsoft.AspNetCore.App:
+    category: backend
+    name: ASP.NET Core
+
+  # Frontend frameworks & libraries
+  react:
+    category: frontend
+    name: React
+  react-dom:
+    category: frontend
+    name: React DOM
+  vue:
+    category: frontend
+    name: Vue.js
+  svelte:
+    category: frontend
+    name: Svelte
+  "@angular/core":
+    category: frontend
+    name: Angular
+  next:
+    category: frontend
+    name: Next.js
+  nuxt:
+    category: frontend
+    name: Nuxt.js
+  "@remix-run/react":
+    category: frontend
+    name: Remix
+  solid-js:
+    category: frontend
+    name: Solid.js
+  tailwindcss:
+    category: frontend
+    name: Tailwind CSS
+  bootstrap:
+    category: frontend
+    name: Bootstrap
+  "@mui/material":
+    category: frontend
+    name: Material UI
+  "@chakra-ui/react":
+    category: frontend
+    name: Chakra UI
+
+  # Database, ORMs & Data layers
+  prisma:
+    category: database
+    name: Prisma ORM
+  "@prisma/client":
+    category: database
+    name: Prisma Client
+  mongoose:
+    category: database
+    name: Mongoose (MongoDB)
+  typeorm:
+    category: database
+    name: TypeORM
+  sequelize:
+    category: database
+    name: Sequelize
+  drizzle-orm:
+    category: database
+    name: Drizzle ORM
+  sqlalchemy:
+    category: database
+    name: SQLAlchemy
+  tortoise-orm:
+    category: database
+    name: Tortoise ORM
+  peewee:
+    category: database
+    name: Peewee ORM
+  pg:
+    category: database
+    name: PostgreSQL Client
+  mysql2:
+    category: database
+    name: MySQL Client
+  redis:
+    category: database
+    name: Redis
+  ioredis:
+    category: database
+    name: ioredis
+  mongodb:
+    category: database
+    name: MongoDB Client
+  gorm.io/gorm:
+    category: database
+    name: GORM
+  diesel:
+    category: database
+    name: Diesel ORM
+  sqlx:
+    category: database
+    name: SQLx
+
+  # DevOps & Infrastructure
+  docker:
+    category: devops
+    name: Docker
+  kubernetes:
+    category: devops
+    name: Kubernetes
+  terraform:
+    category: devops
+    name: Terraform
+  github-actions:
+    category: devops
+    name: GitHub Actions
+  gitlab-ci:
+    category: devops
+    name: GitLab CI
+  vercel:
+    category: devops
+    name: Vercel
+  netlify:
+    category: devops
+    name: Netlify
+
+  # Testing
+  jest:
+    category: testing
+    name: Jest
+  vitest:
+    category: testing
+    name: Vitest
+  mocha:
+    category: testing
+    name: Mocha
+  cypress:
+    category: testing
+    name: Cypress
+  playwright:
+    category: testing
+    name: Playwright
+  "@playwright/test":
+    category: testing
+    name: Playwright Test
+  pytest:
+    category: testing
+    name: Pytest
+  unittest:
+    category: testing
+    name: Python unittest
+  junit:
+    category: testing
+    name: JUnit
+  testng:
+    category: testing
+    name: TestNG
+
+  # AI / ML & Utilities
+  langchain:
+    category: other
+    name: LangChain
+  llama-index:
+    category: other
+    name: LlamaIndex
+  google-generativeai:
+    category: other
+    name: Google Generative AI
+  openai:
+    category: other
+    name: OpenAI SDK
+  anthropic:
+    category: other
+    name: Anthropic SDK
+  chromadb:
+    category: other
+    name: ChromaDB
+  jsonwebtoken:
+    category: other
+    name: JSON Web Tokens (JWT)
+  passport:
+    category: other
+    name: Passport.js
+  celery:
+    category: other
+    name: Celery Task Queue
+  socket.io:
+    category: other
+    name: Socket.io
+  graphql:
+    category: other
+    name: GraphQL
+  flutter:
+    category: other
+    name: Flutter
