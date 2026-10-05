@@ -28,10 +28,13 @@ origins = [
     "http://localhost:3000",
     "http://127.0.0.1:5173",
 ]
+if "," in settings.frontend_origin:
+    origins.extend([o.strip() for o in settings.frontend_origin.split(",")])
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=origins if settings.frontend_origin != "*" else ["*"],
+    allow_origin_regex=r"https://.*\.onrender\.com",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

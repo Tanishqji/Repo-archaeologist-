@@ -1,0 +1,43 @@
+services:
+  # 1. Backend Web Service (FastAPI)
+  - type: web
+    name: repo-archaeologist-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -e .
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: SQLITE_DB_PATH
+        value: ./data/cache.db
+      - key: CHROMA_DIR
+        value: ./data/chroma
+      - key: FRONTEND_ORIGIN
+        value: "*"
+
+  # 2. Frontend Static Site (React + Vite)
+  - type: web
+    name: repo-archaeologist-ui
+    runtime: static
+    rootDir: frontend
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: repo-archaeologist-api
+          property: host
