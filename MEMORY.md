@@ -12,7 +12,7 @@
 - **Last updated:** 2026-10-05
 
 ## 2. What exists right now
-- **Documentation Suite:** `PRD.md`, `ARCHITECTURE.md`, `RULES.md`, `PHASES.md`, `DESIGN.md`, `DECISIONS.md`, `README.md`, `.env.example`, `docker-compose.yml`.
+- **Documentation Suite:** `PRD.md`, `ARCHITECTURE.md`, `RULES.md`, `PHASES.md`, `DESIGN.md`, `DECISIONS.md`, `PACKAGES.md`, `README.md`, `.env.example`, `docker-compose.yml`.
 - **Backend Service:**
   - `app/config.py`: Environment configuration and validation with Pydantic settings.
   - `app/core/validators.py`: Strict SSRF protection and URL variant parser.
@@ -75,6 +75,7 @@
 | `frontend/src/App.tsx` | Main responsive interface with theme toggle |
 | `frontend/src/components/ReportView.tsx` | Full report visualization and export actions |
 | `frontend/src/components/ChatPanel.tsx` | Interactive RAG chat drawer with code citations |
+| `PACKAGES.md` | Complete inventory of every installed package with version & purpose |
 
 ## 4. Decisions made (and why)
 | Date | Decision | Reason |

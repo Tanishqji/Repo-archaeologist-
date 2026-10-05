@@ -83,6 +83,7 @@ docker compose up --build
 - [`RULES.md`](./RULES.md) – Development principles, security constraints, and coding rules.
 - [`PHASES.md`](./PHASES.md) – Phase-by-phase build plan and milestones.
 - [`DECISIONS.md`](./DECISIONS.md) – Architectural choices, trade-offs, and assumptions.
+- [`PACKAGES.md`](./PACKAGES.md) – Comprehensive catalog of all installed backend & frontend packages.
 - [`MEMORY.md`](./MEMORY.md) – Living project status and task log.
 
 ---
